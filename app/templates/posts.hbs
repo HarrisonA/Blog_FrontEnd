@@ -1,0 +1,12 @@
+<h3>Post index</h3>
+<ul>
+  {{#each model as |post|}}
+    <li>
+      {{#link-to 'post' post}}  <!-- each post is just the model or id. 'post' is the route name-->
+        {{post.title}}
+      {{/link-to}}
+      <button {{action 'delete' post}}>Delete</button>
+    </li>
+  {{/each}}
+</ul>
+{{#link-to 'post.new'}}New Post{{/link-to}}
