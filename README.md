@@ -6,6 +6,7 @@ A blog app that allows the user to create and comment on blog posts. All posts a
 The front end is built with *Ember 2.3*, while *Rails 5* was used to build the backend to serve and persist the data.  NOTE: This app uses the rails API that is available in the Blog_BackEnd repo.
 
 ### To install the FRONT End app:
+(Ember 2.x should be installed on your computer)
 1. Clone this repo.  
 
 2. cd into "Blog_FrontEnd" directory and run "npm install" followed by "bower install".
