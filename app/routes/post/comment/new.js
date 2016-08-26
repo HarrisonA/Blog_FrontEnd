@@ -4,6 +4,9 @@ export default Ember.Route.extend({
   model() {
     return {};
   },
+
+  // NOTE: Because comment/new is a *subroute* of post,
+  // renderTemplate is needed to display post/comment/new.hbs
   renderTemplate() {
     this.render('post.comment.new', { into: 'application' });
   },
